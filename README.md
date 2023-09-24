@@ -1,36 +1,51 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Sons of Node
 
-## Getting Started
+A Sons of Node é uma empresa brasileira que se concentra em solucionar desafios educacionais. Nossa missão é melhorar o ensino no Brasil por meio de soluções inovadoras.
 
-First, run the development server:
+Este é o projeto **Sons of Node**, uma aplicação React e este guia fornecerá uma descrição básica de como configurar e executar este projeto localmente usando Docker.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Pré-requisitos
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- Docker e Docker Compose instalados em sua máquina.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## Setup do Projeto
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+1. **Clonar o repositório**
 
-## Learn More
+   Utilize o comando abaixo para clonar o repositório caso use chave ssh de autenticação:
 
-To learn more about Next.js, take a look at the following resources:
+   ```bash
+   git clone git@github.com:SonsOfNode/SonsOfNode.git
+   ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+   ou
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+   Utilize o comando abaixo para clonar o repositório caso possa utilizar o https para isso:
 
-## Deploy on Vercel
+   ```bash
+   git clone https://github.com/SonsOfNode/SonsOfNode.git
+   ```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+2. **Navegar para o diretório do projeto**
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+   Utilize o comando cd para navegar até o projeto
+
+   ```bash
+   cd sonsofnode
+   ```
+
+3. **Inicie o container**
+
+   Inicie o container com o docker-compose
+
+   ```bash
+   docker-compose up -d --build
+   ```
+
+4. **Acesse a porta 3000**
+
+   Abra seu navegador web e acesse a porta 3000 com o endereço
+
+   ```bash
+   http://localhost:3000
+   ```
