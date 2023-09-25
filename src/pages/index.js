@@ -1,10 +1,11 @@
 import { Header } from '@/components/Header';
-import Head from 'next/head';
+import { Article } from '@/components/Article';
 
 const Home = () => {
   return (
     <>
       <Header />
+      <Article />
     </>
   );
 };
