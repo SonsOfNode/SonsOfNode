@@ -1,149 +1,298 @@
+import Image from 'next/image';
+import BarChart from './BarChart';
+import PieChart from './PieChart';
+import LineChart from './LineChart';
+import {
+  FinalAverageByYearData,
+  FinalAverageByYearOptions,
+  FinalAverageByAgeData,
+  FinalAverageByAgeOptions,
+  FinalAverageByTextsData,
+  FinalAverageByTextsOptions,
+  FinalAverageByMathData,
+  FinalAverageByMathOptions,
+  ManAndWomanNumberData,
+  ManAndWomanNumberOptions,
+  WomanAndManFinalAverageData,
+  WomanAndManFinalAverageOptions,
+  FinalMediaByListenTypeData,
+  FinalMediaByListenTypeOptions,
+} from '@/utils/constants';
+import woman from '@/images/woman.png';
+import woman2 from '@/images/woman2.png';
+import man from '@/images/man.png';
+
 export const Article = () => {
   return (
     <section className="article">
       <h2 className="title article__title">IA na Educação</h2>
       <div className="article__container">
-        <article>
-          <h3 className="title article__subtitle">Intrudução</h3>
-          <p className="text article__text">
-            Hackathon é um projeto multidisciplinar na área de tecnologia, feito
-            tanto por instituições da área da educação quanto por empresas para
-            obter novas ideias e revolucionar o mercado. Suas únicas regras são
-            trabalhar por um tempo limitado somente em projetos novos e
-            criativos que que não estejam relacionados ao dia a dia da empresa
-            ou da instituição. Muitas coisas que já estão presentes no nosso
-            cotidiano foram criadas em hackathon. Em 2013 o Facebook realizou
-            hackathons para a melhoria de sua plataforma e consequentemente da
-            empresa, funções como 1álbuns compartilhados, figurinhas de like e
-            climas nos eventos foram uma das ideias implementadas deste
-            hackathon. Até mesmo o botão “curtir” saíram destas maratonas. Seus
-            benefícios são incontáveis.
-          </p>
+        <article className="article_content_image">
+          <div className="article__texts">
+            <h3 className="title article__subtitle">Intrudução</h3>
+            <p className="text article__text">
+              Hackathon: Onde a Magia da Tecnologia Acontece! Você sabia que
+              muitas funcionalidades que você adora em plataformas como o
+              Facebook, como o botão &quot;curtir&quot;, nasceram em um É um
+              sprint criativo intenso, onde inovação e criatividade caminham
+              juntas para redefinir o futuro.
+            </p>
+          </div>
+          <Image
+            className="article__image"
+            src={woman2}
+            alt="woman"
+            style={{ maxWidth: '50%', height: 'auto' }}
+          />
         </article>
-        <article>
-          <h3 className="title article__subtitle">Objetivo/Problemática</h3>
-          <p className="text article__text">
-            A organização Sons of Node defende o avanço da IA (explicar melhor a
-            opinião do grupo) e tem como objetivo aprofundar o tema em relação a
-            educação, combatendo o problema de formação de alunos do ensino
-            médio sem de fato ter o coao aluno descrevendo pontos que ele
-            precnhecimento esperado da Base Nacional Comum Curricular.
-          </p>
-        </article>
-        <article>
-          <h3 className="title article__subtitle">O Produto</h3>
-          <p className="text article__text">
-            Nosso projeto consiste em fazer uma análise exploratória de dados
-            sobre o desempenho dos alunos em todo o Brasil, usando como métrica
-            o Exame Nacional do Ensino Médio (ENEM), a partir disso tendo noção
-            do desempenho por sexo, idade, raça e até por tipo de escola, se é
-            pública ou particular. Desta forma, a área de web irá criar um site
-            com a apresentação dos dados e com uma prova geral (desenvolvida por
-            IA) sobre a matéria escolhida, gerando ao final dela um feedback
-            personalizado ao aluno descrevendo pontos que ele precisa melhorar
-            para ter o total compreendimento da matéria, para desenvolver a
-            educação brasileira como um todo, podendo assim ser facilmente
-            escalável e tendo tanto escolas como o próprio governo como
-            possíveis clientes
-          </p>
-        </article>
-        <article>
-          <h3 className="title article__subtitle">Quais dados possuímos?</h3>
-          <p className="text article__text">
-            Como dito anteriormente, nós da Sons of Node utilizamos dados do
-            ENEM, disponibilizado pelo próprio governo brasileiro. Tendo em si
-            uma vasta gama de dados sabendo todo o background do aluno. Desde o
-            sexo, idade, raça, qual a situação de conclusão do ensino médio,
-            estado civil, se estudou em escola pública ou privada e etc.
-            (opinião da descrição)
-          </p>
-        </article>
-        <article>
-          <h3 className="title article__subtitle">O que fizemos?</h3>
-          <p className="text article__text">
-            Começamos nossa análise com uma bela ‘limpeza’ dos dados, pois muita
-            coisa encontrada era desnecessária na nossa análise, além de deixar
-            o dataframe mais pesado e lento ao trabalhar com ele. Tinham colunas
-            que havia mais de 70% de dados ausentes por exemplo, então
-            resolvemos tirar elas para facilitar nossa análise já que não eram
-            colunas do nosso ‘foco’. Após a limpeza começamos a famosa AED,
-            análise exploratória de dados.
-          </p>
-        </article>
-        <article>
-          <h3 className="title article__subtitle">O que fizemos?</h3>
-          <p className="text article__text">
-            Começamos nossa análise com uma bela ‘limpeza’ dos dados, pois muita
-            coisa encontrada era desnecessária na nossa análise, além de deixar
-            o dataframe mais pesado e lento ao trabalhar com ele. Tinham colunas
-            que havia mais de 70% de dados ausentes por exemplo, então
-            resolvemos tirar elas para facilitar nossa análise já que não eram
-            colunas do nosso ‘foco’. Após a limpeza começamos a famosa AED,
-            análise exploratória de dados.
-          </p>
-        </article>
-        <article>
-          <h3 className="title article__subtitle">Materiais e Métodos</h3>
-          <p className="text article__text">
-            O pensamento geral do grupo desde o princípio sempre foi defender o
-            avanço da inteligência artificial no campo da educação. O foco
-            escolhido foi o desempenho dos estudantes do ensino médio
-            brasileiro. Acreditamos que fornecer mais conhecimento e direção aos
-            jovens brasileiros pode elevar o índice de educação no país. Para
-            mensurar o desempenho, utilizamos dados do ENEM de 2022,
-            disponibilizados pelo governo brasileiro. O conjunto original de
-            dados continha mais de 3 milhões de linhas e após limpeza,
-            elaboramos nosso dicionário para análise.
-          </p>
-        </article>
+        <div className="article__grafics">
+          <article className="article__content article__grafic article_grafic_first">
+            <div>
+              <h3 className="title article__subtitle">Objetivo/Problemática</h3>
+              <p className="text article__text">
+                Sons of Node: Campeões da Educação com IA! Acreditamos no poder
+                da Inteligência Artificial para transformar a educação.
+                Combatemos a lacuna entre o que se espera dos alunos do ensino
+                médio e o que realmente aprendem, alinhado à Base Nacional Comum
+                Curricular.
+              </p>
+            </div>
+          </article>
 
-        <article>
-          <h3 className="title article__subtitle">
-            Análise exploratória dos dados
-          </h3>
-          <p className="text article__text">
-            Realizamos uma análise exploratória dos dados do ENEM, oferecendo
-            insights sobre o desempenho dos alunos considerando variáveis como
-            sexo, idade, raça, e tipo de escola. Esta análise inclui
-            visualizações que dão um contexto mais amplo e permitem tirar
-            conclusões. Outras explorações podem ser realizadas no conjunto de
-            dados, ampliando o entendimento sobre a performance estudantil e
-            áreas de atuação.
-          </p>
-        </article>
+          <article className="article__content article__grafic">
+            <div>
+              <h3 className="title article__subtitle">Materiais e Métodos</h3>
+              <p className="text article__text">
+                IA + Educação: Uma Combinação Poderosa! Usamos os dados mais
+                recentes do ENEM, 2022, para criar uma análise que ilumina as
+                áreas mais críticas da educação média brasileira. Queremos
+                elevar o patamar da educação no Brasil!
+              </p>
+            </div>
+          </article>
 
-        <article>
-          <h3 className="title article__subtitle">Resultados e Conclusões</h3>
-          <p className="text article__text">
-            Através da análise dos dados, identificamos padrões e tendências
-            relacionados ao desempenho dos alunos. Algumas ideias foram aceitas
-            e outras refutadas. Como próximos passos, pretendemos aprofundar a
-            análise, investigar outras métricas e buscar implementar soluções
-            baseadas nos insights adquiridos.
-          </p>
-        </article>
+          <article className="article__content article__grafic">
+            <div>
+              <h3 className="title article__subtitle">O Produto</h3>
+              <p className="text article__text">
+                O Raio-X do Desempenho Escolar no Brasil! Mergulhamos fundo nos
+                dados do ENEM para entender como nossos estudantes estão
+                performando. Mas não para por aí! Desenvolvemos uma prova
+                dinâmica, impulsionada pela IA, que ao ser concluída, revela
+                instantaneamente um relatório detalhado sobre os pontos que o
+                aluno precisa se fortalecer. É personalização no próximo nível!
+              </p>
+            </div>
+          </article>
 
-        <article>
-          <h3 className="title article__subtitle">Referências</h3>
-          <ul>
-            <li className="text article__text">
-              <a
-                className="link text"
-                href="https://www.techtudo.com.br/noticias/2014/01/sete-ideias-do-facebook-que-viraram-produtos-em-hackathons-de-2013.ghtml"
-              >
-                TechTudo: Ideias do Facebook em Hackathons de 2013
-              </a>
-            </li>
-            <li className="text article__text">
-              <a
-                className="link text"
-                href="https://www.gov.br/inep/pt-br/acesso-a-informacao/dados-abertos/microdados/enem"
-              >
-                Dados abertos ENEM
-              </a>
-            </li>
-          </ul>
-        </article>
+          <article className="article__content article__grafic">
+            <div>
+              <h3 className="title article__subtitle">
+                Quais dados possuímos?
+              </h3>
+              <p className="text article__text">
+                Conhecendo Nossos Estudantes! Os dados do ENEM nos dão uma visão
+                completa: desde o background sociocultural do aluno até sua
+                performance acadêmica. Tudo para oferecer insights precisos e
+                ações direcionadas.
+              </p>
+            </div>
+          </article>
+
+          <article className="article__content article__grafic">
+            <div>
+              <h3 className="title article__subtitle">O que fizemos?</h3>
+              <p className="text article__text">
+                Da Bagunça à Clareza: Limpeza de Dados! Lidamos com um oceano de
+                informações, removendo ruídos e focando no essencial. O
+                resultado? Uma análise exploratória precisa que destila os
+                principais insights.
+              </p>
+            </div>
+          </article>
+
+          {/* <article className="article__content article__grafic article__grafics">
+            <div className="article__containers">
+              <Image
+                src={man}
+                alt="man"
+                className="article__image"
+                style={{ minWidth: '20rem', maxWidth: '100%', height: 'auto' }}
+              />
+            </div>
+          </article> */}
+
+          <article className="article__content article__grafic">
+            <div>
+              <h3 className="title article__subtitle">
+                Análise exploratória dos dados
+              </h3>
+              <p className="text article__text">
+                Onde os Números Contam Uma História! Nos aprofundamos nos dados,
+                descobrindo padrões e tendências que ilustram a jornada
+                educacional dos estudantes brasileiros. Cada gráfico, cada
+                número, conta uma parte da história.
+              </p>
+            </div>
+          </article>
+
+          <div className="barchart">
+            <div className="chart-container">
+              <h3 className="subtitle article__subtitle">
+                Média FInal em relação à Ano de Conclusão do EM
+              </h3>
+              <BarChart
+                data={FinalAverageByYearData}
+                options={FinalAverageByYearOptions}
+              />
+              <p className="text article__text">
+                Neste gráfico, desvendamos as histórias por trás de 20.000
+                médias finais, traçando um caminho desde a formatura no ensino
+                médio. Vamos começar com o Grupo 1, os formandos de 2021, que
+                possuem uma média sólida de 402.7. Após apenas 3 anos, essa
+                média despenca para cerca de 335.2, uma queda de cerca de 16,7%.
+                Após uma década, a média desce para 285.4, resultando em uma
+                incrível queda de cerca de 29%.
+              </p>
+            </div>
+            <div className="chart-container">
+              <h3 className="subtitle article__subtitle">
+                Média Final em relação à idade
+              </h3>
+              <BarChart
+                data={FinalAverageByAgeData}
+                options={FinalAverageByAgeOptions}
+              />
+              <p className="text article__text">
+                De forma surpreendente quem é do grupo 1 de idade (menos de 17
+                anos) tem uma vantagem de média das notas em relação a quem tem
+                17 anos. Claramente conforme o tempo passa o conhecimento é
+                dissipado, atingindo seu menor ponto no grupo 12 (entre 31 e 35
+                anos). Uma percepção no mínimo curiosa que podemos tirar deste
+                gráfico também, é que quem é do grupo 18 (entre 61 e 65) tem uma
+                média maior do que quem é do grupo 6 (21 anos de idade) em
+                diante, aparentemente uma explicação lógica para este dado seria
+                dizer que quem tem uma idade mais avançada está mais
+                comprometido em estudar em comparação aos que saíram do ensino
+                médio, mas acreditam ainda ter conhecimento o suficiente para a
+                prova.
+              </p>
+            </div>
+            <div className="chart-container">
+              <h3 className="subtitle article__subtitle">
+                Média Final em relação à Redação
+              </h3>
+              <LineChart
+                data={FinalAverageByTextsData}
+                options={FinalAverageByTextsOptions}
+              />
+              <p className="text article__text">
+                Para esse gráfico pegamos 20mil alunos aleatórios que não tinham
+                nota zerada de qualquer matéria, separamos em grupos de notas
+                por matemática e redação e fizemos um gráfico de linha para
+                analisar a correlação do aumento da nota de matemática e redação
+                com o aumento da média final.
+              </p>
+            </div>
+            <div className="chart-container">
+              <h3 className="subtitle article__subtitle">
+                Média Final em relação à Matemática
+              </h3>
+              <LineChart
+                data={FinalAverageByMathData}
+                options={FinalAverageByMathOptions}
+              />
+              <p className="text article__text">
+                Há uma clara relação entre o aumento das notas e a média final,
+                porém a correlação de todos da prova de matemática e a média
+                final (0.95) é maior do que a da redação com a média final
+                (0.93), então ao ficar na dúvida entre números ou letras, vá nos
+                números a maioria das vezes.
+              </p>
+            </div>
+            <div className="chart__container">
+              <div className="chart__content">
+                <div className="chart__contents">
+                  <h3 className="subtitle article__subtitle">
+                    Quantidade de Homens x Mulheres no ENEM em Milhões
+                  </h3>
+                  <PieChart
+                    data={ManAndWomanNumberData}
+                    options={ManAndWomanNumberOptions}
+                  />
+                </div>
+                <div className="chart__contents">
+                  <h3 className="subtitle article__subtitle">
+                    Quantidade de Homens x Mulheres no ENEM em Milhões
+                  </h3>
+                  <PieChart
+                    data={WomanAndManFinalAverageData}
+                    options={WomanAndManFinalAverageOptions}
+                  />
+                </div>
+              </div>
+              <p className="text article__text">
+                Mulheres participam em 61.1% das cadeiras do ENEM em dias de
+                prova. Percebe-se uma dominância em relação a inscrição. Porém a
+                dominância acontece apenas em quantidade, mas não em qualidade,
+                pois este gráfico mostra a igualdade de conhecimento entre
+                gêneros.
+              </p>
+            </div>
+          </div>
+          <div className="chart-container">
+            <h3 className="subtitle article__subtitle">
+              Média final x Tipo de Ensino
+            </h3>
+            <div className="chat__content chart__containers">
+              <PieChart
+                data={FinalMediaByListenTypeData}
+                options={FinalMediaByListenTypeOptions}
+              />
+            </div>
+            <p className="text article__text chart__containers">
+              Como era de se esperar, os dados revelam uma diferença
+              significativa nas médias entre o ensino regular e o ensino
+              especial, com uma margem impressionante de mais de 100 pontos de
+              de diferença.
+            </p>
+          </div>
+          <article className="article__content article__grafic article_final">
+            <div>
+              <h3 className="title article__subtitle">
+                Resultados e Conclusões
+              </h3>
+              <p className="text article__text">
+                Decifrando o Código da Educação! Com nossa análise, abrimos o
+                livro sobre o que realmente acontece nas salas de aula do
+                Brasil. As conclusões nos orientam sobre os próximos passos, com
+                o objetivo final de melhorar a trajetória educacional de cada
+                aluno no Brasil.
+              </p>
+            </div>
+            <div>
+              <h3 className="title article__subtitle">Referências</h3>
+              <ul>
+                <li className="text article__text">
+                  <a
+                    className="link text"
+                    href="https://www.techtudo.com.br/noticias/2014/01/sete-ideias-do-facebook-que-viraram-produtos-em-hackathons-de-2013.ghtml"
+                  >
+                    TechTudo: Ideias do Facebook em Hackathons de 2013
+                  </a>
+                </li>
+                <li className="text article__text">
+                  <a
+                    className="link text"
+                    href="https://www.gov.br/inep/pt-br/acesso-a-informacao/dados-abertos/microdados/enem"
+                  >
+                    Dados abertos ENEM
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </article>
+        </div>
       </div>
     </section>
   );
