@@ -446,6 +446,10 @@ text {
   transform: scale(1.1);
 }
 
+.inverted-colors {
+  filter: invert(0.7);
+}
+
 @media screen and (min-width: 48rem) {
   .navbar__button {
     display: none;
@@ -697,4 +701,17 @@ text {
   width: 100%;
   min-height: 100vh;
   background-color: #040205;
+  background-image: url(../images/background.png);
+}
+
+.about__container {
+  display: flex;
+  flex-direction: column;
+  max-width: 80%;
+  align-self: center;
+  row-gap: 1rem;
+}
+
+.about__title {
+  text-align: left;
 }

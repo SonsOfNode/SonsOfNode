@@ -18,9 +18,8 @@ import {
   FinalMediaByListenTypeData,
   FinalMediaByListenTypeOptions,
 } from '@/utils/constants';
-import woman from '@/images/woman.png';
 import woman2 from '@/images/woman2.png';
-import man from '@/images/man.png';
+import ZoomInComponent from './ZoomIn';
 
 export const Article = () => {
   return (
