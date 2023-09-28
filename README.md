@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Sons of Node
 
 A Sons of Node é uma empresa brasileira que se concentra em solucionar desafios educacionais. Nossa missão é melhorar o ensino no Brasil por meio de soluções inovadoras.
@@ -115,4 +116,6 @@ Este é o projeto **Sons of Node**, uma aplicação React e este guia fornecerá
 - [Izaque Israel](https://www.linkedin.com/in/izaque-israel/)
 
 - [Ericky Dias](https://www.linkedin.com/in/erickydias/)
+=======
+>>>>>>> Relatório
 
