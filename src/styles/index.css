@@ -1,0 +1,56 @@
+/* Normalize */
+@import url(../vendor/normalize.css);
+
+/* Fonts */
+@import url(../vendor/fonts.css);
+
+/* button */
+@import url(../blocks/button/button.css);
+
+/* link */
+@import url(../blocks/link/link.css);
+
+/* title */
+@import url(../blocks/title/title.css);
+
+/* text */
+@import url(../blocks/text/text.css);
+
+/* header */
+@import url(../blocks/header/header.css);
+
+/* article */
+@import url(../blocks/article/article.css);
+
+/* logo */
+@import url(../blocks/logo/logo.css);
+
+/* navbar */
+@import url(../blocks/navbar/navbar.css);
+
+/* footer */
+@import url(../blocks/footer/footer.css);
+
+/* inverted-colors */
+@import url(../blocks/inverted-colors/inverted-colors.css);
+
+/* popup */
+@import url(../blocks/popup/popup.css);
+
+/* test */
+@import url(../blocks/test/test.css);
+
+/* results  */
+@import url(../blocks/results/results.css);
+
+/* chatbot */
+@import url(../blocks/chatbot/chatbot.css);
+
+/* error */
+@import url(../blocks/error/error.css);
+
+/* garithos */
+@import url(../blocks/garithos/garithos.css);
+
+/* about */
+@import url(../blocks/about/about.css);
