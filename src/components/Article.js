@@ -30,11 +30,7 @@ export const Article = () => {
           <div className="article__texts">
             <h3 className="title article__subtitle">Intrudução</h3>
             <p className="text article__text">
-              Hackathon: Onde a Magia da Tecnologia Acontece! Você sabia que
-              muitas funcionalidades que você adora em plataformas como o
-              Facebook, como o botão &quot;curtir&quot;, nasceram em um É um
-              sprint criativo intenso, onde inovação e criatividade caminham
-              juntas para redefinir o futuro.
+            Hackathon: Onde a Magia da Tecnologia Acontece! Você sabia que muitas funcionalidades que você adora em plataformas como o Facebook, como o botão  &quot;curtir&quot;, surgiram durante um sprint criativo intenso, onde inovação e criatividade caminham juntas para redefinir o futuro.
             </p>
           </div>
           <Image
@@ -53,7 +49,7 @@ export const Article = () => {
                 da Inteligência Artificial para transformar a educação.
                 Combatemos a lacuna entre o que se espera dos alunos do ensino
                 médio e o que realmente aprendem, alinhado à Base Nacional Comum
-                Curricular.
+                a Curricular.
               </p>
             </div>
           </article>
