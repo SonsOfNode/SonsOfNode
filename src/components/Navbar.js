@@ -31,7 +31,7 @@ const Navbar = ({ handlePopupIsOpen }) => {
               className="inverted-colors"
               src={git}
               alt="github"
-              style={{ width: '5rem', height: '5rem' }}
+              style={{ width: '3rem', height: '3rem' }}
             />
           </a>
         </ul>

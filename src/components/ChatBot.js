@@ -30,11 +30,11 @@ const ChatBot = () => {
     }
   };
 
-  useEffect(() => {
-    if (endOfMessagesRef.current) {
-      endOfMessagesRef.current.scrollIntoView({ behavior: 'smooth' });
-    }
-  }, [messages]);
+  // useEffect(() => {
+  //   if (endOfMessagesRef.current) {
+  //     endOfMessagesRef.current.scrollIntoView({ behavior: 'smooth' });
+  //   }
+  // }, [messages]);
 
   return (
     <section className="chat">

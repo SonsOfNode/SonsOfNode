@@ -16,7 +16,7 @@ export async function askRobomatic(question) {
     url: 'https://robomatic-ai.p.rapidapi.com/api',
     headers: {
       'content-type': 'application/x-www-form-urlencoded',
-      'X-RapidAPI-Key': process.env.NEXT_PUBLIC_PATH_BOT_KEY,
+      'X-RapidAPI-Key': 'e12e0bc10cmshda995883147f031p1ccce2jsn19acf09ab25e',
       'X-RapidAPI-Host': 'robomatic-ai.p.rapidapi.com',
     },
     data: encodedParams,
