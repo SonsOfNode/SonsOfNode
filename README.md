@@ -115,6 +115,4 @@ Este é o projeto **Sons of Node**, uma aplicação React e este guia fornecerá
 - [Izaque Israel](https://www.linkedin.com/in/izaque-israel/)
 
 - [Ericky Dias](https://www.linkedin.com/in/erickydias/)
-=======
->>>>>>> Relatório
 
