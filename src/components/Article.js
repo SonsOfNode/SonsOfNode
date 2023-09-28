@@ -111,17 +111,6 @@ export const Article = () => {
             </div>
           </article>
 
-          {/* <article className="article__content article__grafic article__grafics">
-            <div className="article__containers">
-              <Image
-                src={man}
-                alt="man"
-                className="article__image"
-                style={{ minWidth: '20rem', maxWidth: '100%', height: 'auto' }}
-              />
-            </div>
-          </article> */}
-
           <article className="article__content article__grafic">
             <div>
               <h3 className="title article__subtitle">
@@ -137,7 +126,7 @@ export const Article = () => {
           </article>
 
           <div className="barchart">
-            <div className="chart-container">
+            <div>
               <h3 className="subtitle article__subtitle">
                 Média FInal em relação à Ano de Conclusão do EM
               </h3>
@@ -155,7 +144,7 @@ export const Article = () => {
                 incrível queda de cerca de 29%.
               </p>
             </div>
-            <div className="chart-container">
+            <div>
               <h3 className="subtitle article__subtitle">
                 Média Final em relação à idade
               </h3>
@@ -178,7 +167,7 @@ export const Article = () => {
                 prova.
               </p>
             </div>
-            <div className="chart-container">
+            <div>
               <h3 className="subtitle article__subtitle">
                 Média Final em relação à Redação
               </h3>
@@ -194,7 +183,7 @@ export const Article = () => {
                 com o aumento da média final.
               </p>
             </div>
-            <div className="chart-container">
+            <div>
               <h3 className="subtitle article__subtitle">
                 Média Final em relação à Matemática
               </h3>
@@ -240,7 +229,7 @@ export const Article = () => {
               </p>
             </div>
           </div>
-          <div className="chart-container">
+          <div>
             <h3 className="subtitle article__subtitle">
               Média final x Tipo de Ensino
             </h3>
