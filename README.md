@@ -4,6 +4,11 @@ A Sons of Node é uma empresa brasileira que se concentra em solucionar desafios
 
 Este é o projeto **Sons of Node**, uma aplicação React e este guia fornecerá uma descrição básica de como configurar e executar este projeto localmente usando Docker.
 
+## Para acessar o site do projeto clique no link abaixo
+
+Por conta do tamanho dos arquivos e por exedermos a quota do github de arquivos LFS a análise de dados se encontra na branch ds
+
+
 ### Para acessar o site do projeto clique no link abaixo
 
 - [Sons Of Node](https://sons-of-node.vercel.app/)
